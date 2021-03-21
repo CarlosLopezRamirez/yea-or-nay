@@ -1,0 +1,38 @@
+<div class="welcome-headers">
+    <h2>Welcome to</h2>
+    <h1>Yea or Nay</h1>
+</div>
+
+<br>
+
+<div class="intro-text">
+    <p>Politicians say a lot of things.</p>
+    <p>However, do politicians follow through on what they say?</p>
+    <p>Are your representatives doing what YOU as a voter would like to see?</p>
+    <p>Yea or Nay is here to help you figure that out...</p>
+</div>
+
+<br>
+
+<div class="zip-code-container">
+    <label id="street-label">Enter your Street Address:</label>
+    <br>
+    <input [(ngModel)]="streetAddress">
+    <br>
+    <label id="city-label">Enter your City:</label>
+    <br>
+    <input [(ngModel)]="city">
+    <br>
+    <label id="state-label">Enter your State (Abbreviation):</label>
+    <br>
+    <input [(ngModel)]="state">
+    <br>
+    <label id="zip-label">Enter your Zip Code:</label>
+    <br>
+    <input [(ngModel)]="zipCode">
+    <br>
+</div>
+
+<div class="link-container">
+    <button (click)="onClick()">Find Your Representative</button>
+</div> 
