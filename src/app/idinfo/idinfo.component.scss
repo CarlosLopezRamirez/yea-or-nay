@@ -6,7 +6,6 @@ $parchment: rgb(226, 218, 205);
 
 .welcome-headers {
     text-align: center;
-    padding-top: 15em;
 
     h2 {
         font-family: Abril Fatface;
@@ -51,5 +50,13 @@ $parchment: rgb(226, 218, 205);
         font-family: Lato;
         font-weight: bold;
         background-color: darken($parchment, 20%);
+    }
+}
+
+.image-container {
+    text-align: center;
+
+    img {
+        width: 15%;
     }
 }
