@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class UserService {
 
   private geoData : any;
+  private userName!: string;
 
   getData( this: any ) {
     return this.geoData;
@@ -13,5 +14,12 @@ export class UserService {
   public setData( data: any )
   {
       this.geoData = data;
+  }
+
+  getUserName() {
+    return this.userName;
+  }
+  public setUserName( name: string ) {
+    this.userName = name;
   }
 }

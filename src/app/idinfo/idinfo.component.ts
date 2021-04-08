@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { environment } from '../../environments/environment';
 import { UserService } from '../services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-idinfo',
@@ -9,12 +10,14 @@ import { UserService } from '../services/user.service';
   providers: []
 })
 export class IdinfoComponent {
-  constructor(private _userService: UserService) { }
+  constructor(private _userService: UserService, private router: Router) { }
   
   zipCode!: string;
   state!: string;
   streetAddress!: string;
   city!: string;
+
+  userName!: string;
 
   fullAddress!: string;
 
@@ -32,10 +35,14 @@ export class IdinfoComponent {
       " " + 
       this.state;
 
-    geocoder.geocode(this.fullAddress, ['cd'])
+    geocoder.geocode(this.fullAddress, ['cd117'])
     .then((response: any) => {
       this.geoData = response;
       this._userService.setData(this.geoData);
+      this._userService.setUserName(this.userName);
+      sessionStorage.setItem('userData', JSON.stringify(this.geoData));
+      sessionStorage.setItem('userName', this.userName);
+      this.router.navigate(['mainpage']);
     })
   } // onClick
 }

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.welcome-container {
+    text-align: center;
+    font-family: Lato;
+
+    h2 {
+        font-family: Abril Fatface;
+    }
+
+    #logo, #userName {
+        font-family: Berkshire Swash;
+    }
+}
+
+.user-info {
+    text-align: center;
+    font-family: Lato;
+}

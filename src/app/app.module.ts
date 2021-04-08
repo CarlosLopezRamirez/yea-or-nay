@@ -22,7 +22,7 @@ import { UserService } from './services/user.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [{provide: UserService}],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

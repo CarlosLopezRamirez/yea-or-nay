@@ -9,18 +9,26 @@
     <h1>Yea or Nay</h1>
 </div>
 
-<br>
-
 <div class="intro-text">
-    <p>Politicians say a lot of things.</p>
-    <p>However, do politicians follow through on what they say?</p>
-    <p>Are your representatives doing what YOU as a voter would like to see?</p>
-    <p>Yea or Nay is here to help you figure that out...</p>
+    <p>
+        Yea or Nay is a web app created to help you get to know your representative better.
+    </p>
+    <p>
+        Does your representative vote the way you want them to on bills that affect you?
+    </p>
+    <p>
+        Do you and your representative agree on everything, or is it maybe time for you to vote for someone else?
+    </p>
+    <p>
+        Enter your name and address to get started!
+    </p>
 </div>
 
-<br>
-
 <div class="zip-code-container">
+    <label id="name-label">Enter your Name:</label>
+    <br>
+    <input [(ngModel)]="userName">
+    <br>
     <label id="street-label">Enter your Street Address:</label>
     <br>
     <input [(ngModel)]="streetAddress">
