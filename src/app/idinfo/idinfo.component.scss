@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 $parchment: rgb(226, 218, 205);
 
@@ -8,7 +7,8 @@ $parchment: rgb(226, 218, 205);
     text-align: center;
 
     h2 {
-        font-family: Abril Fatface;
+        font-family: Lato;
+        font-weight: bold;
     }
 
     h1 {
@@ -36,6 +36,7 @@ $parchment: rgb(226, 218, 205);
         text-align: center;
         font-family: Lato;
         border-width: 1px;
+        outline: none;
     }
 }
 
@@ -50,6 +51,11 @@ $parchment: rgb(226, 218, 205);
         font-family: Lato;
         font-weight: bold;
         background-color: darken($parchment, 20%);
+        outline: none;
+
+        &:hover {
+            background-color: darken($parchment, 30%);
+        }
     }
 }
 

@@ -1,4 +1,9 @@
 import { Component } from '@angular/core'; 
+import { Subscription } from 'rxjs';
+import { NavigationStart, Router } from '@angular/router';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+
+export let browserRefresh = false;
 
 @Component({
   selector: 'app-root',
@@ -8,5 +13,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'yea-or-nay';
 
-  constructor() { }
+  subscription: Subscription;
+
+  constructor(private router: Router) { 
+    this.subscription = router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        browserRefresh = !router.navigated;
+      }
+    });
+  }
 }

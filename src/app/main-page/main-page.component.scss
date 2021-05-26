@@ -1,21 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$parchment: rgb(226, 218, 205); 
 
 .welcome-container {
     text-align: center;
     font-family: Lato;
 
     h2 {
-        font-family: Abril Fatface;
+        font-family: Lato;
     }
 
     #logo, #userName {
         font-family: Berkshire Swash;
+    }
+
+    img {
+        margin-top: 1em;
+        width: 10em;
     }
 }
 
 .user-info {
     text-align: center;
     font-family: Lato;
+
+    h3 {
+        font-family: Lato;
+    }
+
+    p {
+        font-size: 1.5em;
+        font-family: Berkshire Swash;
+    }
+}
+
+.button-containers {
+    text-align: center;
+
+    #house-button, #sen1-button, #sen2-button {
+        margin-top: 1em;
+        padding: 1em;
+        font-family: Lato;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        background-color: darken($parchment, 20%);
+        outline: none;
+
+        &:hover {
+            background-color: darken($parchment, 30%);
+        }
+    }
 }

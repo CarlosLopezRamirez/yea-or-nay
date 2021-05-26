@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+$parchment: rgb(226, 218, 205); 
+
+#main-container {
+    background-color: darken($parchment, 10%);
+    display: flex;
+    flex-flow: column;
+    height: 75%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+#content-container {
+    flex: 0 1 auto;
+    margin: 1%;
+}

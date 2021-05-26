@@ -7,6 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { IdinfoComponent } from './idinfo/idinfo.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { SenatorComponent } from './senator/senator.component';
+import { HouseRepComponent } from './house-rep/house-rep.component';
+import { SenatorNestedComponent } from './senator-nested/senator-nested.component';
+import { HouseRepNestedComponent } from './house-rep-nested/house-rep-nested.component';
 
 import { UserService } from './services/user.service';
 
@@ -14,7 +18,11 @@ import { UserService } from './services/user.service';
   declarations: [
     AppComponent,
     IdinfoComponent,
-    MainPageComponent
+    MainPageComponent,
+    SenatorComponent,
+    HouseRepComponent,
+    SenatorNestedComponent,
+    HouseRepNestedComponent
   ],
   imports: [
     BrowserModule,
